@@ -25,7 +25,7 @@ const COACH_PROMPT: &str = r#"
 
 const GENERATOR_PROMPT: &str = r#"
     You are a Russian language professor.
-    Generate one interesting and specific B2-level Russian writing prompt (essay topic).
+    Generate one interesting and specific C1-level Russian writing prompt (essay topic).
     The topic should be suitable for a 200-word response.
     Format your response exactly like this:
     Тема: [Topic name]
@@ -120,7 +120,7 @@ async fn call_gpt(
     );
 
     let body = json!({
-        "model": "gpt-5.4-mini",
+        "model": "gpt-5.4",
         "messages": [
             {"role": "system", "content": system_msg},
             {"role": "user", "content": user_msg}
