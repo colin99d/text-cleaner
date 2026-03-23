@@ -86,7 +86,7 @@ async fn run_prompt(
         api_key,
         GENERATOR_PROMPT,
         "Please generate a new B2 prompt.",
-        0.8,
+        1.0,
     )
     .await?;
 
